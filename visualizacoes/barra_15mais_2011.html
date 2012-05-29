@@ -1,0 +1,55 @@
+<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+      Google Visualization API Sample
+    </title>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['corechart']});
+    </script>
+    <script type="text/javascript">
+      function drawVisualization() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+          ['Empresa', 'Valor'],
+          ['Eletrobras Termonuclear S/A', 6146256000],
+          ['Norte Energia S/A', 4773126308],
+          ['Vivo S.A.', 3031110000],
+          ['Financiadora de Estudos Projetos Finep', 3000000000],
+          ['Eldorado Celulose e Papel Ltda', 2801096760],
+          ['AMBEV', 1913370000],
+          ['Logum Logistica S/A', 1757600000],
+          ['Fiat Automóveis S/A', 1299536999],
+          ['Global Village Telecom Ltda', 1184107000],
+          ['Votorantim Cimentos S.A', 1139473972],
+          ['Alberto Pasqualini - Refap S/A', 1127349480],
+          ['Usiminas', 1088466102],
+          ['Concessionária Auto Raposo Tavares S/A', 1052260682],
+          ['Petróleo Brasileiro S/A - Petrobras', 1023233229],
+          ['Ctrens - Companhia de Manutenção', 946890000],
+          ['Outras 343', 33456792682]
+          ]);
+      
+        // Create and draw the visualization.
+        new google.visualization.BarChart(document.getElementById('visualization')).
+            draw(data, {curveType: "function",
+                        width: 550, height: 440,
+                        vAxis: {maxValue: 10}}
+                );
+      }
+      
+
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="visualization" style="width: 500px; height: 400px;"></div>
+  </body>
+</html>

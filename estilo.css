@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen|Buenard:400,700);
+
+body {
+    font-family: Buenard, sans-serif;
+    font-size: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+strong {
+    font-weight: 700;
+}
+
+#header {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+#header h2 {
+    text-align: right;
+    color: #00864E;
+    margin: 20px 0 20px 20px;
+    font-family: Oxygen, sans-serif;
+    font-size: 18px;
+}
+
+#header img {
+    float: left;
+}
+
+#content a, #content a:active, #content a:visited {
+    color: #0069CC;
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #00854E;
+    border-top: 1px solid #888877;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+}
+
+#footer a, #footer a:active, #footer a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
