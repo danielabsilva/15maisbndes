@@ -33,6 +33,11 @@ strong {
     text-decoration: none;
 }
 
+.visualizacoes {
+    width: 500px; 
+    margin: 5px auto;
+    }
+
 #footer {
     background-color: #00854E;
     border-top: 1px solid #888877;
